@@ -3,6 +3,8 @@
 node_modules/
 bower_components/
 tests/
+public_dev/less/*.css
+
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
