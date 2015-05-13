@@ -10,5 +10,25 @@
 	    font-style: normal;
 	}
 }
+.fontface(@fontname, @fontfilename, @fontweight){
+	@font-face {
+	    font-family: @fontname;
+	    src: url('@{fontfilename}.eot');
+	    src: url('@{fontfilename}.eot?#iefix') format('embedded-opentype'),
+	         url('@{fontfilename}.woff') format('woff'),
+	         url('@{fontfilename}.ttf') format('truetype'),
+	         url('@{fontfilename}.svg#frente_h1regular') format('svg');
+	    font-weight: @fontweight;
+	    font-style: normal;
+	}
+}
 
 .fontface('Frente','../../public/fonts/FrenteH1-Regular-webfont');
+/*
+.fontface('Dosis','../../public/fonts/dosis-regular-webfont','normal');
+.fontface('Dosis','../../public/fonts/dosis-bold-webfont','bold');
+.fontface('Dosis','../../public/fonts/dosis-light-webfont',300);
+*/
+.fontface('RobotoCn','../../public/fonts/robotocondensed-regular-webfont','normal');
+.fontface('RobotoCn','../../public/fonts/robotocondensed-bold-webfont','bold');
+.fontface('RobotoCn','../../public/fonts/robotocondensed-light-webfont',300);
