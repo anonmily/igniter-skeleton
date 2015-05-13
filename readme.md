@@ -1,8 +1,8 @@
-/**** Codeigniter Development Skeleton ****/
+__Codeigniter Development Skeleton__
 This is a skeleton for web development projects with Codeigniter.
 This project is primarily PHP based, using both Bootstrap and JQuery.
 
-/** SETUP AND DIAGNOSIS **/
+__SETUP AND DIAGNOSIS__
 
 * The document root is in the public folder. In a production server, please set the server document root to this folder; the other application folders should not be publicly accessible.
 
