@@ -1,0 +1,26 @@
+{
+  "name": "ignite",
+  "version": "1.0.0",
+  "homepage": "https://github.com/anonmily/igniteb",
+  "authors": [
+    "Michelle Liu <anonmily@michelleliu.me>"
+  ],
+  "description": "codeigniter bootstrap skeleton",
+  "keywords": [
+    "php",
+    "codeigniter",
+    "bootstrap",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
