@@ -1,0 +1,33 @@
+/*----Colors -----*/
+@header-font: 'Frente';
+@default-font: 'Frente';
+@paragraph-font: 'Helvetica';
+
+/*-----Mixins -----*/
+.appearance(){
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.borderradius(@rad){
+	border-radius: @rad;
+	-moz-border-radius: @rad;
+	-webkit-border-radius: @rad;
+}
+.opacity(@opac){
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{opac})";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.rotate(@deg){
+	-webkit-transform:rotate(@deg);
+    -moz-transform:rotate(@deg);
+    -ms-transform:rotate(@deg);
+    transform:rotate(@deg);
+}
+.flex(){
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items:stretch;
+}

@@ -1,0 +1,14 @@
+.fontface(@fontname, @fontfilename){
+	@font-face {
+	    font-family: @fontname;
+	    src: url('@{fontfilename}.eot');
+	    src: url('@{fontfilename}.eot?#iefix') format('embedded-opentype'),
+	         url('@{fontfilename}.woff') format('woff'),
+	         url('@{fontfilename}.ttf') format('truetype'),
+	         url('@{fontfilename}.svg#frente_h1regular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+}
+
+.fontface('Frente','../../public/fonts/FrenteH1-Regular-webfont');

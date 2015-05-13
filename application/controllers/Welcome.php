@@ -20,6 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['title'] = 'Curious Cat CodeIgniter Skeleton';
+		$this->load->view('templates/header', $data);
+		$this->load->view('welcome');
+		$this->load->view('templates/footer', $data);
 	}
 }

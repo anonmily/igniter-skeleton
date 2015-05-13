@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       clientJS:{
-        src:[ 'public_dev/js/frontend.js', 'public_dev/js/bootstrap.js'],
+        src:['bower_components/bootstrap/dist/js/bootstrap.min.js','public_dev/js/frontend.js' ],
         dest: 'public/js/frontend.js'
       }
     },
@@ -33,9 +33,9 @@ module.exports = function(grunt) {
           yuicompress: true,
           optimization: 2
         },
-        files: {
-          "public/css/bootstrap.css": "public_dev/less/common.less"
-        }
+        files:[
+          {src: 'public_dev/less/common.less',dest: 'public/css/common.css'},
+        ]
       }
 
     },
@@ -72,15 +72,12 @@ module.exports = function(grunt) {
         tasks: ['jshint:lib_test', 'qunit']
       },
       styles: {
-        files: ["public_dev/less/*.less","public_dev/less/*/*.less"],
-        tasks: ['less'],
-        options: {
-          livereload: true
-        }
+        files: ["public_dev/less/**.less"],
+        tasks: ['less']
       },
       clientCSS: {
-        files: ["public/css/*.less","public/css/*/*.css"],
-        tasks: ['csslint'],
+        files: ["public/css/**.css"],
+        //tasks: [''],
         options: {
           livereload: true
         }
@@ -98,13 +95,11 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'watch']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'watch']);
 
 };
