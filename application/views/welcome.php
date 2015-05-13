@@ -6,11 +6,12 @@
 	<h2>Setup</h2>
 	<ul>
 		<li> The document root is in the public folder. In a production server, please set the server document root to this folder; the other application folders should not be publicly accessible.
-
+		
+		<li>The index.php directory paths have been updated (e.g. system --> ../system) to account for the new folder structure</li> 
+		
 		<li>Configuration options (e.g. database, base url, etc) is available in application > config</li>
 
 		<li>Autoloaded helpers can be added in application > config > autoload.php</li>
 
-		<li>Remember to fix the index.php directory paths from system --> ../system to account for the new folder structure</li> 
 	</ul>
 </section>
