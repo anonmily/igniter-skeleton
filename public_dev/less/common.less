@@ -2,6 +2,44 @@
 @import "../../public_dev/less/fonts.less";
 @import "../../public_dev/less/variables.less";
 
+/*------ Typography ------*/
+body{
+	font-family: @default-font;
+	font-weight: 300;
+	letter-spacing: 0.333px;
+}
+h1, h2, h3, h4{
+	font-family: @header-font;
+}
+p, li{
+	font-family: @paragraph-font;
+}
+li{
+	margin-bottom: 1em;
+}
+strong{
+	font-weight: normal;
+}
+
+/*---- Utility Classes --- */
+.nobullet li{
+	list-style-type: none;
+}
+.filestructure {
+	li{
+		list-style-type: none;
+		margin-bottom: 0;
+	}
+	.file{
+		color: @brand-color;
+	}
+	.explanation{
+		float:right;
+		font-style: italic;
+		color: @brand-color;
+	}
+}
+
 /*---- Common Styling--- */
 .navbar{
 	background-color: @navbar-color !important;
@@ -14,24 +52,17 @@
 			color: @navbar-text-color !important;
 			&:hover{
 				color: @navbar-hover-color !important;
+				text-decoration: none;
 				cursor: pointer;
 			}
 		}
 	}
 }
 body{
-	font-family: @default-font;
-	font-weight: 300;
-	letter-spacing: 0.333px;
 	background-color: @ground-color;
 	background-image: url('../images/daimond_eyes.png');
 }
-h1, h2, h3, h4{
-	font-family: @header-font;
-}
-p, li{
-	font-family: @paragraph-font;
-}
+
 
 /*------Layout-------*/
 main{ 
@@ -40,7 +71,19 @@ main{
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 	background-color: @main-background-color;
+	height:93vh;
 }
 body.container-fluid{
 	padding:0;
+}
+.welcome{
+	height:100%;
+	.introduction section{
+		border-bottom: 2px solid #eee;
+		padding-bottom: 1em;
+	}
+	aside{
+		background-color: #efefef;
+		height:100%;
+	}
 }
