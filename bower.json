@@ -5,6 +5,10 @@
   "authors": [
     "Michelle Liu <anonmily@michelleliu.me>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonmily/igniter-skeleton.git"
+  },
   "description": "codeigniter bootstrap skeleton",
   "keywords": [
     "php",
@@ -21,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "igniter-skeleton":"git@github.com:anonmily/igniter-skeleton.git#~1"
   }
 }
