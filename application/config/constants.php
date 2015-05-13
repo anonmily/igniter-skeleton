@@ -3,6 +3,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
+| General Site Information/Constants
+|--------------------------------------------------------------------------
+| Custom for every new project
+|
+*/
+define('SITE_NAME','Curious Cat Ignition');
+define('SITE_PATH','http://localhost/vx/admin/public');
+
+/*
+|--------------------------------------------------------------------------
 | File and Directory Modes
 |--------------------------------------------------------------------------
 |
