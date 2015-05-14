@@ -8,8 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Custom for every new project
 |
 */
-define('SITE_NAME','Curious Cat Ignition');
-define('SITE_PATH','http://localhost/vx/admin/public');
+define('SITE_NAME','Curious Cat Igniter');
 
 /*
 |--------------------------------------------------------------------------

@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       clientJS:{
-        src:['bower_components/jquery/dist/jquery.min.js','bower_components/bootstrap/dist/js/bootstrap.min.js','public_dev/js/frontend.js' ],
+        src:['bower_components/jquery/dist/jquery.min.js','bower_components/bootstrap/dist/js/bootstrap.min.js','bower_components/matchHeight/jquery.matchHeight-min.js','public_dev/js/frontend.js' ],
         dest: 'public/js/frontend.js'
       }
     },

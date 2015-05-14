@@ -20,7 +20,7 @@
 <body id="" class="container-fluid">
 
   <header class="navbar navbar-default navbar-fixed-top">
-  	<h1 class="navbar-brand"><a href="<?php echo base_url() ?>"><?php echo SITE_NAME. ' | ' . $title; ?></a></h1>
+  	<h1 class="navbar-brand"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>images/logo.png" class="brandlogo"/><?php echo SITE_NAME. ' | ' . $title; ?></a></h1>
   </header>
 
   <main class="container-fluid">
