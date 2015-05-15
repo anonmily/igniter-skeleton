@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         src:[
           'bower_components/angular**/**.min.js',
           //'public_dev/angular/config.js',
-          'public_dev/angular/*/app.js',
+          'public_dev/angular/*/module.js',
           'public_dev/angular/*/config/**.js',
           'public_dev/angular/*/controllers/**.js', 
           'public_dev/angular/*/services/**.js', 
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
         }
       },
       angularJS: {
-        files: ['public_dev/angular/**.js','public_dev/angular/**/**.js'],
+        files: ['public_dev/angular/**.js','public_dev/angular/*/**.js', 'public_dev/angular/*/*/**.js'],
         tasks: ['concat:angularJS', 'uglify:angularJS'],
         options: {
           livereload: true
