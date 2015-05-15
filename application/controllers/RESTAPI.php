@@ -16,17 +16,17 @@ class RESTAPI extends REST_Controller {
 	public function index_get()
 	{
 		//$data = array('returned: '. $this->get('id'));
-        $this->response('GET: '.$this->get('id'));
+        $this->response('You submitted a GET request: '.$this->get('query'));
 	}
 
 	public function index_post()
 	{
-		$this->response('POST: '.$this->post('id'));
+		$this->response('You submitted a POST request: '.$this->post('query'));
 	}
 
 	public function index_put()
 	{
-		$this->response('PUT: '.$this->put('id'));
+		$this->response('You submitted a PUT request: '.$this->put('query'));
 	}
 
 	public function index_delete()

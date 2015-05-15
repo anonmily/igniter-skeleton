@@ -53,5 +53,7 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//try going to ignite/public/api?id=1 to see the API in action
 $route['api'] = 'restapi';
+$route['(:any)'] = 'welcome/pages/$1';
 

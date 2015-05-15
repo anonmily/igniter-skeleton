@@ -19,8 +19,39 @@
 
 <body id="" class="container-fluid">
 
-  <header class="navbar navbar-default navbar-fixed-top">
-  	<h1 class="navbar-brand"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>images/logo.png" class="brandlogo"/><?php echo SITE_NAME. ' | ' . $title; ?></a></h1>
-  </header>
+  <nav class="navbar navbar-fixed-top">
+      <div class="navbar-header">
+        <h1 class="navbar-brand"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>images/logo.png" class="brandlogo"/><?php echo SITE_NAME. '<span class="pagetitle hidden-sm hidden-xs"> | ' . $title . '</span>' ?></a></h1>
+        
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+      </div><!-- end navbar-header-->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <form class="navbar-form navbar-left" action="./api">
+        <input type="text" name="query" class="form-control" />
+      </form>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="api?query=testrequest">API</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="sidebar">Sidebar</a></li>
+            <li><a href="#">Form</a></li>
+            <li><a href="#">Table</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
 
   <main class="container-fluid">

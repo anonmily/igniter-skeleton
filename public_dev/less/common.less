@@ -45,9 +45,7 @@ strong{
 			float: left;
 			margin-right: 4px;
 		}
-		&:hover:before{
-			background: url('../images/foldersprite.png') 0 -15px no-repeat;
-		}
+		&:hover:before{ background: url('../images/foldersprite.png') 0 -15px no-repeat; }
 	}
 	.file{
 		color: @brand-color;
@@ -61,14 +59,7 @@ strong{
 			margin-right: 4px;
 			margin-top: -5px;
 		}
-		&:hover:before{
-			background: url('../images/filesprite.png') 0 -20px no-repeat;
-		}
-	}
-	.explanation{
-		float:right;
-		font-style: italic;
-		color: @brand-color;
+		&:hover:before{ background: url('../images/filesprite.png') 0 -20px no-repeat; }
 	}
 }
 
@@ -90,11 +81,26 @@ strong{
 		}
 	}
 	.brandlogo{
-		height:50px;
-		margin-top:-15px;
+		height: 40px;
+		margin-top: -10px;
 		margin-right: 6px;
-		padding:0;
-		float:left;
+		padding: 0px;
+		float: left;
+	}
+	.form-control{
+		margin-bottom: 0;
+	}
+	li{ 
+		margin-bottom: 0;
+		a {
+			color: #fff !important;
+			&:hover{
+				background-color: @navbar-dropdown-link-hover !important;
+			}
+		}
+	}
+	.dropdown-menu, .nav .open > a, .nav > li > a:focus{
+		background-color: @navbar-dropdown-color !important;
 	}
 }
 body{
@@ -127,10 +133,14 @@ body.container-fluid{
 	//padding:15px 0px;
 	padding: 0;
 	margin-left: -@grid-gutter-width/2;
-}
-
-.maincontent{
-	background-color: #fff;
+	height: 100%;
+	.maincontent{
+		padding: 0;
+		background-color: #fff;
+		.row{
+			margin-left: 0;
+		}
+	}
 }
 
 .sidebarwrap{

@@ -25,4 +25,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome');
 		$this->load->view('templates/footer', $data);
 	}
+	public function pages($page)
+	{
+		$data['title'] = 'Test Page';
+		$this->load->view('templates/header', $data);
+		$this->load->view('pages/'. $page, $data);
+		$this->load->view('templates/footer', $data);
+	}
 }

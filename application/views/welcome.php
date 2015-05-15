@@ -1,20 +1,20 @@
-<article class="welcome wrapper">
+<article class="welcome wrapper equalheight">
 	<aside sidebar class="container-fluid sidebarwrap">
-		<div class="sidebar col-lg-2 col-md-2 col-sm-2 col-xs-12">
+		<div class="sidebar column col-lg-2 col-md-2 col-sm-2 col-xs-12">
 		<div class="container-fluid">
 			
 		</div><!-- end containerfluid wrap-->
 		</div><!-- end sidebar div-->
 	</aside>
 	<section class="container-fluid mainwrap">
-		<div class="maincontent col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-11 col-xs-offset-1">
-			<article class="introduction container-fluid">
+		<div class="maincontent column col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-11 col-xs-offset-1">
+			<article class="introduction container-fluid equalheight">
 				<div class="row">
-					<div class="intro-left col-lg-9 col-md-9 col-sm-7 col-xs-12">
+					<div class="intro-left column col-lg-9 col-md-9 col-sm-7 col-xs-12">
 						<section>
 							<h1>Welcome!</h1>
-							<p>This is a basic scaffold for future projects primarily using PHP, Bootstrap, and JQuery. Javascript and LESS files are currently compiled with Grunt, and dependencies are managed via bower, npm, and composer.</p>
-							<p>This project also includes RESTful API, with an example/template REST controller for reference, using the CodeIgniter REST Server library made by _____.</p>
+							<p>This is a basic scaffold for future CodeIgniter projects, primarily using PHP, Bootstrap, and JQuery. Javascript and LESS files are currently compiled with Grunt, and dependencies are managed via bower, npm, and composer.</p>
+							<p>This project also includes RESTful API, with an example/template REST controller for reference, using the <a href="https://github.com/chriskacerguis/codeigniter-restserver">CodeIgniter REST Server</a> library.</p>
 						</section>
 						<section>
 							<h1>Installation</h1>
@@ -48,7 +48,7 @@
 							
 						</section>
 					</div>
-					<div class="intro-right col-lg-3 col-md-3 col-sm-5 col-xs-12">
+					<div class="intro-right column col-lg-3 col-md-3 col-sm-5 col-xs-12">
 						<section>
 							<h1>Folder Structure</h1>
 							<ul class="filestructure">
