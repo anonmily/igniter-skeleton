@@ -19,6 +19,13 @@
 						<section>
 							<h1>Installation</h1>
 								<code>git clone git@github.com:anonmily/igniter-skeleton.git</code>
+								<p>Then, if you want to keep up-to-date with the project, you can add a remote:</p>
+								<code>git remote add upstream git@github.com:anonmily/igniter-skeleton.git</code>
+
+								<p>To sync/get new changes:</p>
+								<code>git fetch upstream</code><br />
+								<code>git checkout master</code><br />
+								<code>git merge upstream/master</code>
 
 							<h2>Dependencies</h2>
 							<p>Node dependencies can be installed via npm install in the base directory:
