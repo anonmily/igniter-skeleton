@@ -13,8 +13,21 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       clientJS:{
-        src:['bower_components/jquery/dist/jquery.min.js','bower_components/bootstrap/dist/js/bootstrap.min.js','bower_components/matchHeight/jquery.matchHeight-min.js','public_dev/js/frontend.js' ],
+        src:['bower_components/bootstrap/dist/js/bootstrap.min.js','bower_components/matchHeight/jquery.matchHeight-min.js','public_dev/js/frontend.js' ],
         dest: 'public/js/frontend.js'
+      },
+      angularJS:{
+        src:[
+          'bower_components/angular**/**.min.js',
+          //'public_dev/angular/config.js',
+          'public_dev/angular/*/app.js',
+          'public_dev/angular/*/config/**.js',
+          'public_dev/angular/*/controllers/**.js', 
+          'public_dev/angular/*/services/**.js', 
+          'public_dev/angular/*/directives/**.js', 
+          'public_dev/angular/*/filters/**.js'
+          ],
+        dest: 'public/js/angular.js'
       }
     },
     uglify: {
@@ -24,6 +37,10 @@ module.exports = function(grunt) {
       clientJS:{
         src: 'public/js/frontend.js',
         dest: 'public/js/frontend.js'
+      },
+      angularJS:{
+        src: 'public/js/angular.js',
+        dest: 'public/js/angular.min.js'
       }
     },
     less: {
@@ -82,9 +99,22 @@ module.exports = function(grunt) {
           livereload: true
         }
       },
+      html:{
+        files: ['public/*.html'],
+        options:{
+          livereload: true
+        }
+      },
       clientJS: {
         files: ["public_dev/js/*.js"],
         tasks: ['concat:clientJS', 'uglify:clientJS'],
+        options: {
+          livereload: true
+        }
+      },
+      angularJS: {
+        files: ['public_dev/angular/**.js','public_dev/angular/**/**.js'],
+        tasks: ['concat:angularJS', 'uglify:angularJS'],
         options: {
           livereload: true
         }

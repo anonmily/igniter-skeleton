@@ -32,4 +32,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('pages/'. $page, $data);
 		$this->load->view('templates/footer', $data);
 	}
+	public function angular($extra = NULL)
+	{
+		if(!empty($extra)){
+			$extra = '/' . $extra;
+		}
+		$data['title'] = 'Test Page';
+		$this->load->view('templates/header-angular', $data);
+		$this->load->view('pages/angular'. $extra, $data);
+		$this->load->view('templates/footer-angular', $data);
+	}
 }

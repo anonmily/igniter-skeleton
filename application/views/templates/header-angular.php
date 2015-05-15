@@ -55,4 +55,4 @@
   </div><!-- /.container-fluid -->
   </nav>
 
-  <main class="container-fluid">
+  <main class="container-fluid" ng-app>
