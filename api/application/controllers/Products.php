@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 require_once APPPATH.'libraries/REST_Controller.php';
 
-class RESTAPI extends REST_Controller {
+class Products extends REST_Controller {
 
 	// The HTTP methods are APPENDED to the method names (with underscore!)
 	// Should use this general format for the http requests: index_METHOD
@@ -13,14 +13,10 @@ class RESTAPI extends REST_Controller {
 	// And if you were sending a POST request to the api REST controller,
 	// the request would be sent to the index_post() method
 
-	// The method names MUST be index_get, index_post, index_put, etc.
-	// You CANNOT rename the beginning part of the method names to something else
-	// For example, renaming to api_get() will NOT work.
-
 	public function index_get()
 	{
 		//$data = array('returned: '. $this->get('id'));
-        $this->response('You submitted a GET request: '.$this->get('query'));
+        $this->response('You submitted a GET request to Products: '.$this->get('query'));
 	}
 
 	public function index_post()
@@ -37,4 +33,5 @@ class RESTAPI extends REST_Controller {
 	{
 		//There is no delete method available, but you can add things to do here.
 	}
+
 }
