@@ -18,7 +18,9 @@ module.exports = function(grunt) {
       },
       angularJS:{
         src:[
+          'bower_components/angular/angular.js',
           'bower_components/angular**/**.min.js',
+          'bower_components/angular-ui-router/release/angular-ui-router.min.js',
           //'public_dev/angular/config.js',
           'public_dev/angular/*/module.js',
           'public_dev/angular/*/config/**.js',
